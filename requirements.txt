@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+googletrans==4.0.0-rc1
+gtts
+cryptography
