@@ -12,9 +12,14 @@ from cryptography.fernet import Fernet
 app = FastAPI()
 translator = Translator()
 
+origins = [
+    "https://translator-web-app-frontend-r6fnmkewi.vercel.app/",  # Your frontend
+    "http://localhost:3000",  # Local development
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Change to your frontend URL for security (e.g., ["http://localhost:3000"])
+    allow_origins= origins,
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (GET, POST, OPTIONS, etc.)
     allow_headers=["*"],  # Allow all headers
