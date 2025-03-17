@@ -13,7 +13,7 @@ app = FastAPI()
 translator = Translator()
 
 origins = [
-    "https://translator-web-app-frontend-r6fnmkewi.vercel.app/",  # Your frontend
+    "https://translator-web-app-frontend-hs6q2djyo.vercel.app",  # Your frontend
     "http://localhost:3000",  # Local development
 ]
 
